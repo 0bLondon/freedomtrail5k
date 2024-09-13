@@ -1,78 +1,234 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    position: relative;
     text-align: center;
+    color: white;
 }
 
-header h1 {
+.hero {
+    background-image: url('revolution.jpg'); /* Add your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.description {
+    background-image: url('freedomtrail.jpg'); /* Add your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.description h2 {
+    font-size:48px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
     margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-weight: 700;
 }
 
-section {
-    padding: 20px;
+.nav ul li a:hover {
+    color: #ffd700;
+}
+
+.btn {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f5b800;
+}
+
+main {
+    padding: 40px 20px;
 }
 
 h2 {
-    color: #333;
+    text-align: center;
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-form {
-    max-width: 400px;
+section {
+    margin-bottom: 60px;
+    padding: 20px 0;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
+.detail-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="number"] {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 form input[type="submit"] {
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form input[type="submit"]:hover {
-    background: #555;
+    background-color: #444;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#contact {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#contact h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #ffd700; /* Adds a gold hover effect */
+}
+
+#contact .icon {
+    font-size: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Optional: If you want to add icons to the email/phone */
+#contact .icon-email::before {
+    content: "📜"; /* Scroll icon for email */
+}
+
+#contact .icon-phone::before {
+    content: "📞"; /* Phone icon */
 }
