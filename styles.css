@@ -16,7 +16,7 @@ header {
     background-image: url('revolution.jpg'); /* Add your hero image */
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,49 +24,53 @@ header {
 
 .hero-text {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.description {
-    background-image: url('freedomtrail.jpg'); /* Add your hero image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.description p {
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.description h2 {
-    font-size:48px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 4vw;
+    border-radius: 2vw;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 4vw;
     margin: 0;
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: 3vw;
+}
+.hero a {
+    font-size: 2vw;
+}
+
+#about {
+    background-image: url('freedomtrail.jpg'); /* Add your hero image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2vw;
+    border-radius: 2vw;
+}
+
+.description p {
+    font-size: 3vw;
+    color: white;
+    padding: 2vw;
+    border-radius: 1vw;
+}
+
+.description h2 {
+    font-size: 3vw;
+    color: white;
+    padding: 2vw;
+    border-radius: 1vw;
 }
 
 .nav {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 1vw;
     text-align: center;
 }
 
@@ -78,7 +82,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 1.5vw;
 }
 
 nav ul li a {
@@ -94,10 +98,10 @@ nav ul li a {
 .btn {
     background-color: #ffd700;
     color: #333;
-    padding: 10px 20px;
+    padding: 1vw 2vw;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: .5vw;
     transition: background-color 0.3s;
 }
 
@@ -105,20 +109,17 @@ nav ul li a {
     background-color: #f5b800;
 }
 
-main {
-    padding: 40px 20px;
-}
-
 h2 {
     text-align: center;
     color: #222;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 3.2vw;
+    margin-bottom: 2vw;
 }
 
 section {
-    margin-bottom: 60px;
-    padding: 20px 0;
+    margin-bottom: 1vh;
+    padding: .5vw;
+    margin-top: 1vh;
 }
 
 section img {
@@ -126,49 +127,51 @@ section img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 1vw;
+    margin-top: 2vw;
 }
 
 .details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    gap: 2vw;
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 .detail-item {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 2vw;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1vw;
+    font-size: 2vw;
 }
 
 form {
-    max-width: 600px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1.5vw;
+    font-size: 3vw;
 }
 
 form input[type="text"],
-form input[type="email"],
 form input[type="number"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 1vw;
+    border: .1vw solid #000;
+    border-radius: .5vw;
+    
 }
 
 form input[type="submit"] {
     background-color: #333;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1vw;
+    border-radius: .5vw;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -177,35 +180,39 @@ form input[type="submit"]:hover {
     background-color: #444;
 }
 
+main {
+    padding: 2vw 2vh
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 2vw;
+    margin-top: 4vw;
 }
 
 #contact {
     background-color: #f5f5f5;
-    padding: 40px 20px;
+    padding: 4vw 2vw;
     text-align: center;
-    border-radius: 10px;
-    margin-top: 40px;
+    border-radius: 1vw;
+    margin-top: 4vw;
 }
 
 #contact h2 {
     color: #333;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 3.2vw;
+    margin-bottom: 2vw;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
 
 #contact p {
-    font-size: 18px;
+    font-size: 1.8vw;
     color: #555;
     line-height: 1.8;
-    margin: 10px 0;
+    margin: 1vw 0;
 }
 
 #contact a {
@@ -219,16 +226,62 @@ footer {
 }
 
 #contact .icon {
-    font-size: 22px;
-    margin-right: 10px;
+    font-size: 2.2vw;
+    margin-right: 1vw;
     vertical-align: middle;
 }
 
-/* Optional: If you want to add icons to the email/phone */
-#contact .icon-email::before {
-    content: "📜"; /* Scroll icon for email */
+nav {
+    background-color: #333;
+    padding: .5vw 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-#contact .icon-phone::before {
-    content: "📞"; /* Phone icon */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 4vw;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+nav ul li a.active {
+    color: #ffd700;
+    border-bottom: .1vw solid #ffd700;
+}
+
+#message {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.message-success {
+    color: green;
+    font-weight: bold;
+}
+
+.message-error {
+    color: red;
+    font-weight: bold;
 }

@@ -9,13 +9,6 @@
 </head>
 <body>
     <header>
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Bi-Centennial Freedom Trail 5K and Bar Crawl</h1>
-                <p>Join us for a revolutionary experience!</p>
-                <a href="#register" class="btn">Register Now</a>
-            </div>
-        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -24,6 +17,14 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Bi-Centennial Freedom Trail 5K and Bar Crawl</h1>
+                <p>Join us for a revolutionary experience!</p>
+                <a href="#register" class="btn">Register Now</a>
+            </div>
+        </div>
+        
     </header>
 
     <main>
@@ -48,7 +49,6 @@
                 In the immortal words of a certain colonial hero: "Give me liberty, or give me beer!" 🍻</p>
             </div></div>
         </section>
-
         <section id="details">
             <h2>Race Details</h2>
             <div class="details-grid">
@@ -73,26 +73,32 @@
                     <p>Bar 3</p>
                 </div>
             </div>
+
         </section>
 
-        <!-- <section id="register">
+        <section id="register">
             <h2>Register Now</h2>
-            <form action="#" method="post">
+            <form id=registration_form action="#" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="entry.379407764" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="drinks">How many drinks are you drinking:</label>
+                    <input type="number" id="drinks" name="entry.1104768505" required>
                 </div>
                 <div class="form-group">
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" required>
+                    <label for="km">How many km are you running:</label>
+                    <input type="number" id="km" name="entry.1537926268" required>
                 </div>
+                <!-- <div class="form-group">
+                    <label for="thoughts">Message to the organizers (optional):</label>
+                    <input type="text" id="thoughts" name="entry.1723923672">
+                </div> -->
                 <input type="submit" value="Register" class="btn">
+                <p id="message"></p>
             </form>
-        </section> -->
+        </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
@@ -102,7 +108,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Road Race 2024. All rights reserved.</p>
+        <p>&copy; Freedom Trail 5K 2024. All rights reserved.</p>
     </footer>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
