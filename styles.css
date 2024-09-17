@@ -67,34 +67,6 @@ header {
     border-radius: 1vw;
 }
 
-.nav {
-    background-color: #333;
-    color: white;
-    padding: 1vw;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 1.5vw;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.nav ul li a:hover {
-    color: #ffd700;
-}
-
 .btn {
     background-color: #ffd700;
     color: #333;
@@ -233,7 +205,7 @@ footer {
 
 nav {
     background-color: #333;
-    padding: .5vw 0;
+    padding: .5vw 2vw;
     text-align: center;
     position: sticky;
     top: 0;
@@ -256,7 +228,7 @@ nav li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-transform: uppercase;
     font-weight: 700;
     transition: color 0.3s ease;
