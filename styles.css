@@ -249,8 +249,8 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0 4vw;
+nav li {
+    margin: 0 3vw;
 }
 
 nav ul li a {
