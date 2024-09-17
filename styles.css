@@ -29,15 +29,15 @@ header {
 }
 
 .hero h1 {
-    font-size: 4vw;
+    font-size: 4vh;
     margin: 0;
 }
 
 .hero p {
-    font-size: 3vw;
+    font-size: 3vh;
 }
 .hero a {
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 #about {
@@ -54,14 +54,14 @@ header {
 }
 
 .description p {
-    font-size: 3vw;
+    font-size: 3vh;
     color: white;
     padding: 2vw;
     border-radius: 1vw;
 }
 
 .description h2 {
-    font-size: 3vw;
+    font-size: 3vh;
     color: white;
     padding: 2vw;
     border-radius: 1vw;
@@ -112,7 +112,7 @@ nav ul li a {
 h2 {
     text-align: center;
     color: #222;
-    font-size: 3.2vw;
+    font-size: 3.2vh;
     margin-bottom: 2vw;
 }
 
@@ -133,7 +133,7 @@ section img {
 
 .details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
     gap: 2vw;
     max-width: 900px;
     margin: auto auto;
@@ -144,7 +144,7 @@ section img {
     padding: 2vw;
     text-align: center;
     border-radius: 1vw;
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 form {
@@ -154,7 +154,7 @@ form {
 
 .form-group {
     margin-bottom: 1.5vw;
-    font-size: 3vw;
+    font-size: 3vh;
 }
 
 form input[type="text"],
@@ -202,14 +202,14 @@ footer {
 
 #contact h2 {
     color: #333;
-    font-size: 3.2vw;
+    font-size: 3.2vh;
     margin-bottom: 2vw;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
 
 #contact p {
-    font-size: 1.8vw;
+    font-size: 1.8vh;
     color: #555;
     line-height: 1.8;
     margin: 1vw 0;
@@ -226,7 +226,7 @@ footer {
 }
 
 #contact .icon {
-    font-size: 2.2vw;
+    font-size: 2.2vh;
     margin-right: 1vw;
     vertical-align: middle;
 }
@@ -256,7 +256,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 2.5vw;
+    font-size: 2.5vh;
     text-transform: uppercase;
     font-weight: 700;
     transition: color 0.3s ease;
