@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const name = document.getElementById('name').value.trim();
         const drinks = document.getElementById('drinks').value.trim();
         const km = document.getElementById('km').value.trim();
+        const thoughts = document.getElementById('thoughts').value.trim();
 
         // Simple validation
         if (name === "" || drinks === "" || km === "") {
@@ -31,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const thoughts = "test";
         if (!validateThoughts(thoughts)) {
             showMessage("Please enter a valid message!", "error");
             return;
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to validate name
     function validateThoughts(thoughts) {
-        const re = /^\w+$/;
+        const re = /^[a-zA-Z0-9\s.,?!@#%&()_\-\+=:\/\\]*$/;
         return re.test(String(thoughts));
     }
 
