@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        if (!validateThoughts(thoughts)) {
-            showMessage("Please enter a valid message!", "error");
-            return;
-        }
+        //if (!validateThoughts(thoughts)) {
+            //showMessage("Please enter a valid message!", "error");
+            //return;
+        //}
 
         // Simulate form submission success
         setTimeout(() => {
