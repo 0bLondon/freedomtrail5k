@@ -18,12 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        if (!validateName(name)) {
-            showMessage("Please enter a valid name!", "error");
-            return;
-        }
         if (isNaN(drinks)) {
-            showMessage("Please enter a valid number of drinks address!", "error");
+            showMessage("Please enter a valid number of drinks!", "error");
             return;
         }
 
@@ -32,11 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        //if (!validateThoughts(thoughts)) {
-            //showMessage("Please enter a valid message!", "error");
-            //return;
-        //}
-
         // Simulate form submission success
         setTimeout(() => {
             showMessage(`Thank you for registering, ${name}! Don't forget to bring your tricorner hat!`, "success");
@@ -44,18 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
             form.reset(); // Reset form fields after successful submission
         }, 1000);
     });
-
-    // Function to validate name
-    function validateName(name) {
-        const re = /^([a-zA-Z ])+$/;
-        return re.test(String(name));
-    }
-
-    // Function to validate name
-    function validateThoughts(thoughts) {
-        const re = /^[a-zA-Z0-9\s.,?!@#%&()_\-\+=:\/\\]*$/;
-        return re.test(String(thoughts));
-    }
 
     // Function to display messages
     function showMessage(message, type) {
